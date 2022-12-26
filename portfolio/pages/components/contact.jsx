@@ -1,10 +1,9 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import React, { useState } from 'react';
+import React from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { contact, linkedin, github } from './helpers/assets';
+import { contact, linkedin, github, resume } from './helpers/assets';
 
 const Contact = () => {
   return (
@@ -58,11 +57,11 @@ const Contact = () => {
                   <a href="mailto:rjadharsh333@gmail.com" className='rounded-full shadow-lg shadow-black p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                     <AiOutlineMail color='white '/>
                   </a>
-                  <Link href='/resume'>
+                  <a target="_blank" href={resume} rel="noopener noreferrer">
                       <div className='rounded-full shadow-lg shadow-black p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                         <BsFillPersonLinesFill color='white'/>
                       </div>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
