@@ -36,6 +36,4 @@ yarn-error.log*
 next-env.d.ts
 
 # backup
-.bk2
-/.bk2
-//.bk2
+*.bk2

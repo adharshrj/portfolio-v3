@@ -7,23 +7,16 @@ import Skills from "./components/Skills";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-[#282828] space-y-16">
       <Head>
         <title>Adharsh RJ</title>
         <meta name="description" content="Portfolio of Adharsh RJ" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/assets/adharsh3.png" />
       </Head>
-      <div
-        className="bg-no-repeat bg-cover bg-center"
-        style={{
-          backgroundImage: `url('/assets/bg.jpg')`,
-        }}
-      >
-        <HeroSection />
-      </div>
-      <AboutMe/>
-      <Skills/>
-      <Projects/>
+      <HeroSection />
+      <AboutMe />
+      <Skills />
+      <Projects />
       <Footer />
     </div>
   );
