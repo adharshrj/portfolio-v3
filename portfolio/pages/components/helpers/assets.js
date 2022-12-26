@@ -25,6 +25,10 @@ export const nammacartimg = "/assets/projects/nammacart.png";
 export const xionaimg = "/assets/projects/xiona.jpg";
 export const somnaimg = "/assets/projects/somna.jpg";
 export const reactform = "/assets/projects/cform.png";
+export const resume = process.env.RESUME_URL || "What";
+export const contact = "/assets/phone.png"
+export const linkedin = "https://www.linkedin.com/in/adharsh-rj/"
+export const github = "https://github.com/adharshrj"
 
 export const projectstore = [
   {
@@ -155,3 +159,11 @@ export const other = [
     image: "/assets/skills/github.png",
   },
 ];
+
+const assets = () => {
+  return (
+    <div>Test Assets</div>
+  )
+}
+
+export default assets

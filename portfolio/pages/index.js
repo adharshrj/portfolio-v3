@@ -1,5 +1,6 @@
 import Head from "next/head";
 import AboutMe from "./components/AboutMe";
+import Contact from "./components/contact";
 import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Projects from "./components/projects";
@@ -17,6 +18,7 @@ export default function Home() {
       <AboutMe />
       <Skills />
       <Projects />
+      <Contact/>
       <Footer />
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import { frontend, backend, db, other } from "./helpers/assets";
-import { SkillsCard } from "./helpers/skillscard";
+import  SkillsCard  from "./helpers/skillscard";
 
 const frontendlist = frontend.map((value) => {
   return (

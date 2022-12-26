@@ -1,10 +1,10 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import Typed from "react-typed";
 import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-
+import { resume, linkedin, github } from "./helpers/assets";
 
 function HeroSection() {
   return (
@@ -44,7 +44,7 @@ function HeroSection() {
 
             <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
               <a
-                href="https://www.linkedin.com/in/adharsh-rj/"
+                href={linkedin}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -53,7 +53,7 @@ function HeroSection() {
                 </div>
               </a>
               <a
-                href="https://github.com/adharshrj"
+                href={github}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -66,11 +66,11 @@ function HeroSection() {
                   <AiOutlineMail />
                 </div>
               </Link>
-              <Link href="/resume">
+              <a target="_blank" href={resume} rel="noopener noreferrer">
                 <div className="bg-[#3b95da] rounded-full shadow-lg shadow-black p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                   <BsFillPersonLinesFill />
                 </div>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

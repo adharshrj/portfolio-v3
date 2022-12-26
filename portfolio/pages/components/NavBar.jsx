@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { NavLogo } from './helpers/assets'
+import { NavLogo, resume, linkedin, github } from "./helpers/assets";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
@@ -57,7 +57,9 @@ const Navbar = () => {
               <Link href="/#recent">Recent Work</Link>
             </li>
             <li className="font-extrabold text-white ml-10 text-sm uppercase hover:border-b">
-              <Link href="/resume">Resume</Link>
+              <a target="_blank" href={resume} rel="noopener noreferrer">
+                Resume
+              </a>
             </li>
             <li className="font-extrabold text-white ml-10 text-sm uppercase hover:border-b">
               <Link href="/#contact">Contact</Link>
@@ -99,9 +101,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4">
-                Welcome to my world !
-              </p>
+              <p className="w-[85%] md:w-[90%] py-4">Welcome to my world !</p>
             </div>
           </div>
           <div className="py-4 flex flex-col">
@@ -126,11 +126,11 @@ const Navbar = () => {
                   Recent Work
                 </li>
               </Link>
-              <Link href="/resume">
+              <a target="_blank" href={resume} rel="noopener noreferrer">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Resume
                 </li>
-              </Link>
+              </a>
               <Link href="/#contact">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Contact
@@ -143,7 +143,7 @@ const Navbar = () => {
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <a
-                  href="https://www.linkedin.com/in/adharshrj/"
+                  href={linkedin}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -152,7 +152,7 @@ const Navbar = () => {
                   </div>
                 </a>
                 <a
-                  href="https://github.com/adharshrj"
+                  href={github}
                   target="_blank"
                   rel="noreferrer"
                 >

@@ -10,7 +10,7 @@ function AboutMe() {
           <p className="font-extrabold uppercase text-xl tracking-widest text-[#3b95da]">
             About
           </p>
-          <h2 className="py-4 text-[#dcdbdb] ">My background</h2>
+          <h2 className="py-4 text-[#dcdbdb] ">My Background</h2>
           <p className="py-2 text-[#dcdbdb] text-justify">
             I specialize in designing (systems), developing Full-Stack web
             applications and integerated solutions for a given purpose. I’m a

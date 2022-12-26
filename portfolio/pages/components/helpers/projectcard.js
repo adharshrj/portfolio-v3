@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const ProjectCard = ({ title, backgroundImg, stack, url }) => {
+const ProjectCard = ({ title, backgroundImg, stack, url="default" }) => {
   return (
     <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-black rounded-xl group hover:bg-gradient-to-r from-[#51b1e5] to-[#8ae0fe]">
       <Image
