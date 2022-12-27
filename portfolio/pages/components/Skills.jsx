@@ -36,7 +36,7 @@ const otherlist = other.map((value) => {
 
 const Skills = () => {
   return (
-    <div id="skills" className="w-full lg:h-screen">
+    <div id="skills" className="w-full px-4 lg:h-screen">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="font-extrabold text-xl tracking-widest uppercase text-[#3b95da]">
           Skills

@@ -9,14 +9,14 @@ import { resume, linkedin, github } from "./helpers/assets";
 function HeroSection() {
   return (
     <div
-      className={`transition duration-150 bg-no-repeat bg-cover bg-center`}
+      className={`bg-no-repeat bg-cover bg-center`}
       style={{
         backgroundImage: `url('/assets/bg3.jpg')`,
       }}
     >
       <div
         id="home"
-        className="w-full h-screen text-center backdrop-brightness-50"
+        className="w-full px-8 h-screen text-center backdrop-brightness-50"
       >
         <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
           <div>

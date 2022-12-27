@@ -7,14 +7,14 @@ import { contact, linkedin, github, resume } from './helpers/assets';
 
 const Contact = () => {
   return (
-    <div id='contact' className='w-full lg:h-screen'>
+    <div id='contact' className='w-full px-4 lg:h-screen'>
       <div className='max-w-[1240px] m-auto px-2 py-16 w-full '>
         <p className='font-extrabold text-xl tracking-widest uppercase text-[#3b95da]'>
           Contact
         </p>
         <h2 className='py-4 text-[#dcdbdb]'>Reach out to me</h2>
-        <div className='grid lg:grid-cols-5 gap-8'>
-          <div className='col-span-3 lg:col-span-6 w-full h-full shadow-xl shadow-black rounded-xl p-4'>
+        <div className='gap-8'>
+          <div className=' w-full h-full shadow-xl shadow-black rounded-xl p-4'>
             <div className='lg:p-4 h-full '>
               <div>
                 <Image
@@ -29,7 +29,7 @@ const Contact = () => {
                 <h2 className='py-2'>Adharsh RJ</h2>
                 <p>Full - Stack Developer</p>
                 <p className='py-4'>
-                  I am looking for Freelance / Contract/ Full-Time Software Engineer or Software Developer roles.
+                  I am looking for Full-Time / Freelance / Contract Software Engineer or Software Developer roles.
                 </p>
               </div>
               <div>

@@ -24,15 +24,26 @@ const Navbar = () => {
     window.addEventListener("scroll", handleShadow);
   }, []);
 
+  useEffect(() => {
+    if (nav) {
+      document.body.style.overflow = 'hidden';
+      document.body.style.paddingRight = '15px';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+      document.body.style.paddingRight = '0px';
+    };
+  }, [nav]);
+
   return (
     <div
       className={
         shadow
-          ? "fixed w-full h-20 bg-black opacity-80 shadow-xl z-[100] ease-in-out duration-500"
+          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-500"
           : "fixed w-full h-20 z-[100]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+      <div className={shadow ? "bg-black opacity-80 flex justify-between items-center w-full h-full pr-4 2xl:px-16" : "flex justify-between items-center w-full h-full pr-4 2xl:px-16"}>
         <Link href="/">
           <Image
             src={NavLogo}
@@ -66,8 +77,8 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <div onClick={handleNav} className="md:hidden">
-            <AiOutlineMenu color="white" size={25} />
+          <div onClick={handleNav} className="md:hidden cursor-pointer">
+            <AiOutlineMenu size={25} className="text-white hover:text-[#3b95da]" />
           </div>
         </div>
       </div>
@@ -84,7 +95,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? "overflow-y-auto opacity-100 scrollbar-hide fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
@@ -101,38 +112,38 @@ const Navbar = () => {
               </div>
             </div>
             <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4">Welcome to my world !</p>
+              <p className="w-[85%] md:w-[90%] py-4 font-bold">Welcome to my world !</p>
             </div>
           </div>
           <div className="py-4 flex flex-col">
-            <ul className="uppercase">
+            <ul className="uppercase font-extrabold ">
               <Link href="/">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Home
+                <li onClick={() => setNav(false)} className="py-4 hover:text-[#3b95da] text-sm">
+                   Home
                 </li>
               </Link>
               <Link href="/#about">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li onClick={() => setNav(false)} className="py-4 hover:text-[#3b95da] text-sm">
                   About
                 </li>
               </Link>
               <Link href="/#skills">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li onClick={() => setNav(false)} className="py-4 hover:text-[#3b95da] text-sm">
                   Skills
                 </li>
               </Link>
               <Link href="/#recent">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li onClick={() => setNav(false)} className="py-4 hover:text-[#3b95da] text-sm">
                   Recent Work
                 </li>
               </Link>
-              <a target="_blank" href={resume} rel="noopener noreferrer">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+              <a target="_blank" href={resume} rel="noopener  noreferrer">
+                <li onClick={() => setNav(false)} className="py-4 text-sm hover:text-[#3b95da]">
                   Resume
                 </li>
               </a>
               <Link href="/#contact">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li onClick={() => setNav(false)} className="py-4 text-sm hover:text-[#3b95da]">
                   Contact
                 </li>
               </Link>

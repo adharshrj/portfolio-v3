@@ -4,7 +4,7 @@ import Link from "next/link";
 import { AboutImg } from "./helpers/assets";
 function AboutMe() {
   return (
-    <div id="about" className="w-full md:h-screen p-2 flex items-center">
+    <div id="about" className="w-full md:h-screen px-4 py-2 flex items-center">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <p className="font-extrabold uppercase text-xl tracking-widest text-[#3b95da]">
