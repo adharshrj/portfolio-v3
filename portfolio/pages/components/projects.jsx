@@ -10,6 +10,8 @@ const projectlist = projectstore.map((value) => {
         backgroundImg={value.backgroundImage}
         url={value.url}
         stack={value.stack}
+        about={value.about}
+        
       />
     </div>
   );

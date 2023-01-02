@@ -13,6 +13,7 @@ function deploymentportal() {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
+          priority={true}
           src={reactform}
           alt="/"
         />

@@ -95,7 +95,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "overflow-y-auto opacity-100 scrollbar-hide fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? "overflow-y-auto opacity-100 scrollbar-hide fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#282828] p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
@@ -106,17 +106,17 @@ const Navbar = () => {
               </Link>
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+                className="rounded-full shadow-lg shadow-black p-3 cursor-pointer"
               >
-                <AiOutlineClose />
+                <AiOutlineClose size={20} className="text-white hover:text-[#3b95da]"/>
               </div>
             </div>
             <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4 font-bold">Welcome to my world !</p>
+              <p className="w-[85%] md:w-[90%] py-4 font-bold text-white">Welcome to my world !</p>
             </div>
           </div>
           <div className="py-4 flex flex-col">
-            <ul className="uppercase font-extrabold ">
+            <ul className="uppercase font-extrabold text-white">
               <Link href="/">
                 <li onClick={() => setNav(false)} className="py-4 hover:text-[#3b95da] text-sm">
                    Home
@@ -158,8 +158,8 @@ const Navbar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaLinkedinIn />
+                  <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <FaLinkedinIn color="white"/>
                   </div>
                 </a>
                 <a
@@ -167,24 +167,24 @@ const Navbar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaGithub />
+                  <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <FaGithub color="white" />
                   </div>
                 </a>
                 <Link href="/#contact">
                   <div
                     onClick={() => setNav(!nav)}
-                    className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+                    className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300"
                   >
-                    <AiOutlineMail />
+                    <AiOutlineMail color="white"/>
                   </div>
                 </Link>
                 <a target="_blank" href={resume} rel="noopener noreferrer">
                   <div
                     onClick={() => setNav(!nav)}
-                    className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+                    className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300"
                   >
-                    <BsFillPersonLinesFill />
+                    <BsFillPersonLinesFill color="white" />
                   </div>
                 </a>
               </div>

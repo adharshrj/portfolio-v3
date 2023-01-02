@@ -5,15 +5,24 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { resume, linkedin, github } from "./helpers/assets";
+import Image from "next/image";
 
 function HeroSection() {
   return (
+    <>
     <div
       className={`bg-no-repeat bg-cover bg-center`}
-      style={{
-        backgroundImage: `url('/assets/bg3.jpg')`,
-      }}
     >
+      <Image
+          className="absolute z-1"
+          layout="fill"
+          objectFit="cover"
+          priority={true}
+          placeholder="blur"
+          blurDataURL= '/assets/bg3.jpg'
+          src='/assets/bg3.jpg'
+          alt="/"
+        />
       <div
         id="home"
         className="w-full px-8 h-screen text-center backdrop-brightness-50"
@@ -22,9 +31,9 @@ function HeroSection() {
           <div>
             <h1 className="py-4 text-gray-200	">
               {" "}
-              Hi <span className="animate-wavinghand">👋🏻</span> there! I'm <span className="text-[#3b95da]">Adharsh</span>
+              Hi there! I'm <span className="text-[#3b95da]">Adharsh</span>
             </h1>
-            <h1 className="py-2 text-gray-200	">A Full-Stack Engineer</h1>
+            <h1 className="py-2 text-transparent animate-pulse bg-clip-text bg-gradient-to-r from-[#43cea2] to-[#185a9d]">{"<"}Full-Stack Engineer{">"}</h1>
             <p className="py-4 text-white sm:max-w-[70%] m-auto">
               I’m currently building responsive web-applications and
               integerating them with scalable backend systems for my clients.
@@ -76,6 +85,7 @@ function HeroSection() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

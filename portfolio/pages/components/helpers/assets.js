@@ -35,43 +35,50 @@ export const projectstore = [
     title: "Web3 NFT Dashboard",
     backgroundImage: "/assets/projects/web3.png",
     url: "/web3",
-    stack: "Next.js, Alchemy, Supabase, Ethers",
+    stack: ["Next.js", "Alchemy", "Supabase", "Ethers"],
+    about: "A simple and custom NFT dashboard using Next.js, Alchemy SDK and Ethers.js with Supabase and Edge fuctions serving as backend"
   },
   {
     title: "Nammacart",
     backgroundImage: "/assets/projects/nammacart.png",
     url: "/nammacart",
-    stack: "Next.js, Hapi.js, AWS, Elastic Search",
+    stack: ["Next.js", "Hapi.js", "AWS", "Elastic Search"],
+    about: "Nammacart is a website where retailers can list and sell their products seamlessly and efficiently. Imagine a smaller scale Amazon only concentrating on household products."
   },
   {
     title: "Deployment Portal",
     backgroundImage: "/assets/projects/support.png",
     url: "/deploymentportal",
-    stack: "Next.js, AWS, AzureAD",
+    stack: ["Next.js", "AWS", "AzureAD"],
+    about: "A portal to handle seamless deployments of various projects using custom runners and Github/Gitlab APIs"
   },
   {
     title: "Customer Support Portal",
     backgroundImage: "/assets/projects/support.png",
     url: "/supportportal",
-    stack: "React.js, Node.js, AWS",
+    stack: ["React.js", "Node.js", "AWS"],
+    about: "An AI assisted portal for the customer support agents to handle the requests of the entire North American Market"
   },
   {
     title: "Custom Form",
     backgroundImage: "/assets/projects/cform.png",
     url: "/reactform",
-    stack: "React.js",
+    stack: ["React.js"],
+    about: "A custom resuable form component with automatic field validation"
   },
   {
     title: "Somna - Sleep and Activity ",
     backgroundImage: "/assets/projects/somna.jpg",
     url: "/somna",
-    stack: "Python, HTML, CSS, Js",
+    stack: ["Python", "HTML", "CSS", "Js"],
+    about: "An intelligent application to track and manage the dietary and fitness requirements of astronauts in space"
   },
   {
     title: "Xiona - Medical Assitant Robot",
     backgroundImage: "/assets/projects/xiona.jpg",
     url: "/xiona",
-    stack: "Python, Tensorflow, TTS",
+    stack: ["Python", "Tensorflow", "TTS"],
+    about: "A robotic device that automates the segregation of C-19 positive and negative patients based on which they're sent to their respective wards"
   },
 ];
 

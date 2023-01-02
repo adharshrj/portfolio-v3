@@ -13,6 +13,7 @@ function supportportal() {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
+          priority={true}
           src={support}
           alt="/"
         />

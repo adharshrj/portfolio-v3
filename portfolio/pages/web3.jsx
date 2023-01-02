@@ -13,6 +13,7 @@ function web3() {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
+          priority={true}
           src={web3eth}
           alt="/"
         />
