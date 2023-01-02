@@ -9,6 +9,8 @@ export default function Document() {
           <img
             src="assets/loader.gif"
             alt=""
+            height="60"
+            width="90"
           />
         </div>
 
