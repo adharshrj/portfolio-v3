@@ -155,7 +155,7 @@ export const other = [
   },
   {
     title: "Azure",
-    image: "/assets/skills/Azure.png",
+    image: "/assets/skills/azure.svg",
   },
   {
     title: "GitLab",
