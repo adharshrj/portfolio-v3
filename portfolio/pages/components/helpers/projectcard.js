@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const ProjectCard = ({ title, backgroundImg, stack, about , url = "default" }) => {
+const ProjectCard = ({ title, backgroundImg, stack = ["Temp"], about = "about" , url = "default" }) => {
   return (
     <div className="flex max-w-xl mx-auto relative overflow-hidden items-center justify-center h-auto w-full shadow-xl shadow-black rounded-xl group hover:bg-gradient-to-r from-[#51b1e5] to-[#8ae0fe]">
       <div className="group-hover:opacity-10 sm:w-full md:w-full">
