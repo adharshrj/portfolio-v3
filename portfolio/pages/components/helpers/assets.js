@@ -29,8 +29,15 @@ export const resume = process.env.RESUME_URL;
 export const contact = "/assets/phone.png"
 export const linkedin = "https://www.linkedin.com/in/adharsh-rj/"
 export const github = "https://github.com/adharshrj"
-
+export const hangman = "/assets/projects/hangman.png"
 export const projectstore = [
+  {
+    title: "Hangman Game",
+    backgroundImage: "/assets/projects/hangman.png",
+    url: "/hangman",
+    stack: ["React.js", "Vite", "Tailwind", "Vercel", "TypeScript"],
+    about: "A modern implementation of the OG Hangman word guess game"
+  },
   {
     title: "Web3 NFT Dashboard",
     backgroundImage: "/assets/projects/web3.png",
@@ -44,13 +51,6 @@ export const projectstore = [
     url: "/nammacart",
     stack: ["Next.js", "Hapi.js", "AWS", "Elastic Search"],
     about: "Nammacart is a website where retailers can list and sell their products seamlessly and efficiently. Imagine a smaller scale Amazon only concentrating on household products."
-  },
-  {
-    title: "Deployment Portal",
-    backgroundImage: "/assets/projects/support.png",
-    url: "/deploymentportal",
-    stack: ["Next.js", "AWS", "AzureAD"],
-    about: "A portal to handle seamless deployments of various projects using custom runners and Github/Gitlab APIs"
   },
   {
     title: "Customer Support Portal",
