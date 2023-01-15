@@ -95,7 +95,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "overflow-y-auto opacity-100 scrollbar-hide fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#282828] p-10 ease-in duration-500"
+              ? "overflow-y-auto opacity-100 scrollbar-hide fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#1F2833] p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
@@ -112,7 +112,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4 font-bold text-white">Welcome to my world !</p>
+              <p className="w-[85%] md:w-[90%] py-4 font-bold text-white">Welcome to my world!</p>
             </div>
           </div>
           <div className="py-4 flex flex-col">
@@ -149,7 +149,7 @@ const Navbar = () => {
               </Link>
             </ul>
             <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#3b95da]">
+              <p className="uppercase tracking-widest font-bold text-[#3b95da]">
                 Connect with me
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">

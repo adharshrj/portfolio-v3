@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
       if (loader) {
         setTimeout(() => {
           loader.remove();;
-        }, "1500")
+        }, "2000")
       }
         
     }
