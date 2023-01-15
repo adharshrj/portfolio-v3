@@ -10,7 +10,8 @@ function HeroSection() {
   return (
     <>
       <section>
-        <div className="bg-main bg-no-repeat bg-cover bg-fixed h-screen bg-center">
+        <div className="bg-main bg-no-repeat bg-cover bg-fixed h-screen bg-top lg:bg-center">
+          
           <div
             id="home"
             className="w-full px-8 pt-32 h-screen text-center backdrop-brightness-[.33]"
@@ -20,7 +21,7 @@ function HeroSection() {
                 <h1 className="py-4 text-[#dcdbdb]">
                   Hi there! I'm <span className="text-[#3b95da]">Adharsh</span>
                 </h1>
-                <h1 className="py-2 text-transparent animate-pulse bg-clip-text bg-gradient-to-r from-[#43cea2] to-[#037ae3]">
+                <h1 className="py-2 md:text-5xl text-transparent text-3xl animate-pulse bg-clip-text bg-gradient-to-r from-[#43cea2] to-[#037ae3]">
                   {"<"}Full-Stack Engineer{">"}
                 </h1>
                 <p className="py-4 text-[#dcdbdb] sm:max-w-[70%] m-auto font-semibold text-justify">
