@@ -15,7 +15,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleShadow = () => {
-      if (window.scrollY >= 90) {
+      if (window.scrollY >= 200) {
         setShadow(true);
       } else {
         setShadow(false);
@@ -43,7 +43,7 @@ const Navbar = () => {
           : "fixed w-full h-20 z-[100]"
       }
     >
-      <div className={shadow ? "bg-black opacity-80 flex justify-between items-center w-full h-full pr-4 2xl:px-16" : "flex justify-between items-center w-full h-full pr-4 2xl:px-16"}>
+      <div className={shadow ? "bg-black opacity-80 flex ease-in-out duration-500 justify-between items-center w-full h-full pr-4 2xl:px-16" : "flex md:justify-center justify-between ease-in-out duration-700 items-center w-full h-full pr-4 2xl:px-16"}>
         <Link href="/">
           <Image
             src={NavLogo}
@@ -55,24 +55,24 @@ const Navbar = () => {
         </Link>
         <div>
           <ul className="hidden md:flex">
-            <li className="font-extrabold text-white ml-10 text-sm uppercase hover:border-b">
+            <li className="font-extrabold text-white ml-10 uppercase hover:border-b-[4px]">
               <Link href="/">Home</Link>
             </li>
-            <li className="font-extrabold text-white ml-10 text-sm uppercase hover:border-b">
+            <li className="font-extrabold text-white ml-10 uppercase hover:border-b-[4px]">
               <Link href="/#about">About</Link>
             </li>
-            <li className="font-extrabold text-white ml-10 text-sm uppercase hover:border-b">
+            <li className="font-extrabold text-white ml-10 uppercase hover:border-b-[4px]">
               <Link href="/#skills">Skills</Link>
             </li>
-            <li className="font-extrabold text-white ml-10 text-sm uppercase hover:border-b">
+            <li className="font-extrabold text-white ml-10 uppercase hover:border-b-[4px]">
               <Link href="/#recent">Recent Work</Link>
             </li>
-            <li className="font-extrabold text-white ml-10 text-sm uppercase hover:border-b">
+            <li className="font-extrabold text-white ml-10 uppercase hover:border-b-[4px]">
               <a target="_blank" href={resume} rel="noopener noreferrer">
                 Resume
               </a>
             </li>
-            <li className="font-extrabold text-white ml-10 text-sm uppercase hover:border-b">
+            <li className="font-extrabold text-white ml-10 uppercase hover:border-b-[4px]">
               <Link href="/#contact">Contact</Link>
             </li>
           </ul>

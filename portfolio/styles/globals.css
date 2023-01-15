@@ -2,13 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 html {
-  scroll-behavior: smooth!important;
-  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth !important;
+  font-family: "Raleway", sans-serif;
 }
-
 
 #globalLoader {
   position: fixed;
@@ -24,6 +23,7 @@ html {
   display: flex;
 }
 
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
@@ -36,26 +36,30 @@ html {
 
 @layer base {
   body {
-    @apply bg-[#f2f2f2] text-[#000000] tracking-wide
+    @apply bg-[#f2f2f2] text-[#000000] tracking-wide;
   }
 
-  h1, h2, h3, h4, h5 {
-    @apply font-bold
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-bold;
   }
 
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl
+    @apply text-4xl sm:text-5xl md:text-6xl;
   }
 
   h2 {
-    @apply text-3xl sm:text-4xl
+    @apply text-3xl sm:text-4xl;
   }
 
   li {
-    @apply cursor-pointer
+    @apply cursor-pointer;
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#1a89ea] to-[#4fc2da] text-white
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#1a89ea] to-[#4fc2da] text-white;
   }
 }

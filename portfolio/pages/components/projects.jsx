@@ -11,7 +11,6 @@ const projectlist = projectstore.map((value) => {
         url={value.url}
         stack={value.stack}
         about={value.about}
-        
       />
     </div>
   );
@@ -19,7 +18,7 @@ const projectlist = projectstore.map((value) => {
 
 const Projects = () => {
   return (
-    <div id="recent" className="w-full pt-8 sm:pt-8 md:pt-16">
+    <div id="recent" className="w-full px-4 pt-8 sm:pt-8 md:pt-16">
       <div className="max-w-[1240px] mx-auto lg:px-0 lg:pt-32 md:px-4 sm:px-4 pt-16">
         <p className="font-extrabold text-xl tracking-widest uppercase text-[#3b95da]">
           Projects

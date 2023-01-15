@@ -7,7 +7,7 @@ import Typed from "react-typed";
 
 function nammacart() {
   return (
-    <div className="w-full bg-[#282828]">
+    <div className="w-full bg-[#1F2833]">
       <div className="w-screen h-[50vh] relative">
         <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10" />
         <Image

@@ -32,6 +32,7 @@ const Contact = () => {
                   I am looking for Full-Time / Freelance / Contract Software Engineer or Software Developer roles.
                 </p>
               </div>
+              {/* Social Media Section */}
               <div>
                 <p className='uppercase pt-8 text-[#dcdbdb]'>Connect With Me</p>
                 <div className='flex items-center justify-between py-4'>

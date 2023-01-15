@@ -9,7 +9,7 @@ import Backtotop from "./components/helpers/backtotop";
 
 export default function Home() {
   return (
-    <div className="bg-[#282828] space-y-16">
+    <div className="bg-[#1F2833] space-y-16">
       <Head>
         <title>Adharsh RJ</title>
         <meta name="description" content="Portfolio of Adharsh RJ" />
@@ -19,8 +19,8 @@ export default function Home() {
       <AboutMe />
       <Skills />
       <Projects />
-      <Contact/>
-      <Backtotop/>
+      <Contact />
+      <Backtotop />
       <Footer />
     </div>
   );
