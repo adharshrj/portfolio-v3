@@ -12,22 +12,17 @@ function AboutMe() {
           </p>
           <h2 className="py-4 text-[#dcdbdb] font-bold">My Background</h2>
           <p className="py-2 text-[#dcdbdb] font-semibold text-justify">
-            I specialize in designing (systems), developing Full-Stack web
-            applications and integerated solutions for a given purpose. I’m a
-            continuous and passionate learner who loves to experment with state
-            of the art technologies to upskill myself for the market needs.
+            I specialize in designing systems, developing Full-Stack web applications and integrated solutions for a given purpose. 
+            I’m a continuous and passionate learner who loves to experiment with state of the art technologies to upskill myself for the market needs.
           </p>
           <p className="py-2 text-[#dcdbdb] font-semibold text-justify">
-            I initially started as a Python Developer for AI/ML related projects
-            in 2019. I then took up Java Backend Developement and then evolved
-            into a Java Full-Stack Developer with the React, SpringBoot and
-            MySQL stack. I later picked up the MERN stack and Next.Js based on
-            client requirements. I believe in developing Language and Framework
-            agnostic skills in order to become a good Engineer.
+           I initially started as a Python Developer for AI/ML related projects in 2019. 
+           I then took up Java Backend Development and then evolved into a Java Full-Stack Developer with the React, SpringBoot and MySQL stacks. 
+           I later picked up the MERN stack and Next.Js based on client requirements. 
+           I believe in developing Language and Framework agnostic skills in order to become a good Engineer.
           </p>
           <p className="py-2 text-[#dcdbdb] font-semibold text-justify">
-            I also have extensive experience with developing solutions on various
-            cloud platforms namely Amazon Web Services (AWS) and Azure.
+           I also have extensive experience with developing solutions on various cloud platforms, namely Amazon Web Services (AWS) and Azure.
           </p>
           <Link href="/#recent">
             <p className="py-2 text-[#dcdbdb]  underline cursor-pointer">
