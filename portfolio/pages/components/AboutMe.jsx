@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { AboutImg } from "./helpers/assets";
+import { AboutImg } from "../../helpers/assets"
 function AboutMe() {
   return (
     <div id="about" className="w-full lg:h-screen px-4 py-2 flex items-center justify-center">

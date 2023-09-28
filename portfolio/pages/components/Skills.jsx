@@ -1,6 +1,5 @@
 import React from "react";
-import { frontend, backend, db, other } from "./helpers/assets";
-import SkillsCard from "./helpers/skillscard";
+import SkillsCard from "../../helpers/skillscard";
 import { useStore } from "../../context/AppContext";
 
 const Skills = () => {

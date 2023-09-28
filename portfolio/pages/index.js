@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Projects from "./components/projects";
 import Skills from "./components/Skills";
-import Backtotop from "./components/helpers/backtotop";
+import Backtotop from "../helpers/backtotop";
 
 export default function Home() {
   return (

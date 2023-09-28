@@ -1,6 +1,5 @@
 import React from "react";
-import { projectstore } from "./helpers/assets";
-import ProjectCard from "./helpers/projectcard";
+import ProjectCard from "../../helpers/projectcard";
 import { useStore } from "../../context/AppContext";
 import { v4 as uuidv4 } from "uuid";
 

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { resume, linkedin, github } from "./helpers/assets";
+import { resume, linkedin, github } from "../../helpers/assets";
 
 function HeroSection() {
   return (

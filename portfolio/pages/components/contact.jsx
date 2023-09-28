@@ -3,7 +3,7 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { contact, linkedin, github, resume } from "./helpers/assets";
+import { contact, linkedin, github, resume } from "../../helpers/assets";
 
 const Contact = () => {
   return (
