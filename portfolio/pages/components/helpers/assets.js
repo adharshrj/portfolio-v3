@@ -26,59 +26,65 @@ export const xionaimg = "/assets/projects/xiona.jpg";
 export const somnaimg = "/assets/projects/somna.jpg";
 export const reactform = "/assets/projects/cform.png";
 export const resume = process.env.RESUME_URL;
-export const contact = "/assets/phone.png"
-export const linkedin = "https://www.linkedin.com/in/adharsh-rj/"
-export const github = "https://github.com/adharshrj"
-export const hangman = "/assets/projects/hangman.png"
+export const contact = "/assets/phone.png";
+export const linkedin = "https://www.linkedin.com/in/adharsh-rj/";
+export const github = "https://github.com/adharshrj";
+export const hangman = "/assets/projects/hangman.png";
+
 export const projectstore = [
   {
     title: "Hangman Game",
     backgroundImage: "/assets/projects/hangman.png",
     url: "/hangman",
     stack: ["React.js", "Vite", "Tailwind", "Vercel", "TypeScript"],
-    about: "A modern implementation of the OG Hangman word guess game"
+    about: "A modern implementation of the OG Hangman word guess game",
   },
   {
     title: "Web3 NFT Dashboard",
     backgroundImage: "/assets/projects/web3.png",
     url: "/web3",
     stack: ["Next.js", "Alchemy", "Supabase", "Ethers"],
-    about: "A simple and custom NFT dashboard using Next.js, Alchemy SDK and Ethers.js with Supabase and Edge fuctions serving as backend"
+    about:
+      "A simple and custom NFT dashboard using Next.js, Alchemy SDK and Ethers.js with Supabase and Edge fuctions serving as backend",
   },
   {
     title: "Nammacart",
     backgroundImage: "/assets/projects/nammacart.png",
     url: "/nammacart",
     stack: ["Next.js", "Hapi.js", "AWS", "Elastic Search"],
-    about: "Nammacart is a website where retailers can list and sell their products seamlessly and efficiently. Imagine a smaller scale Amazon only concentrating on household products."
+    about:
+      "Nammacart is a website where retailers can list and sell their products seamlessly and efficiently. Imagine a smaller scale Amazon only concentrating on household products.",
   },
   {
     title: "Customer Support Portal",
     backgroundImage: "/assets/projects/support.png",
     url: "/supportportal",
     stack: ["React.js", "Node.js", "AWS"],
-    about: "An AI assisted portal for the customer support agents to handle the requests of the entire North American Market"
+    about:
+      "An AI assisted portal for the customer support agents to handle the requests of the entire North American Market",
   },
   {
     title: "Custom Form",
     backgroundImage: "/assets/projects/cform.png",
     url: "/reactform",
     stack: ["React.js"],
-    about: "A custom resuable form component with automatic field validation"
+    about: "A custom resuable form component with automatic field validation",
   },
   {
     title: "Somna - Sleep and Activity ",
     backgroundImage: "/assets/projects/somna.jpg",
     url: "/somna",
     stack: ["Python", "HTML", "CSS", "Js"],
-    about: "An intelligent application to track and manage the dietary and fitness requirements of astronauts in space"
+    about:
+      "An intelligent application to track and manage the dietary and fitness requirements of astronauts in space",
   },
   {
     title: "Xiona - Medical Assitant Robot",
     backgroundImage: "/assets/projects/xiona.jpg",
     url: "/xiona",
     stack: ["Python", "Tensorflow", "TTS"],
-    about: "A robotic device that automates the segregation of C-19 positive and negative patients based on which they're sent to their respective wards"
+    about:
+      "A robotic device that automates the segregation of C-19 positive and negative patients based on which they're sent to their respective wards",
   },
 ];
 
@@ -126,7 +132,7 @@ export const backend = [
   {
     title: "Python",
     image: "/assets/skills/python.png",
-  }
+  },
 ];
 
 export const db = [
@@ -166,11 +172,3 @@ export const other = [
     image: "/assets/skills/github.png",
   },
 ];
-
-const assets = () => {
-  return (
-    <div>Test Assets</div>
-  )
-}
-
-export default assets

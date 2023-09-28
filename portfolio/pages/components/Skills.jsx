@@ -1,40 +1,42 @@
 import React from "react";
 import { frontend, backend, db, other } from "./helpers/assets";
 import SkillsCard from "./helpers/skillscard";
-
-const frontendlist = frontend.map((value) => {
-  return (
-    <div key={value.title}>
-      <SkillsCard title={value.title} skimage={value.image} />
-    </div>
-  );
-});
-
-const backendlist = backend.map((value) => {
-  return (
-    <div key={value.title}>
-      <SkillsCard title={value.title} skimage={value.image} />
-    </div>
-  );
-});
-
-const dblist = db.map((value) => {
-  return (
-    <div key={value.title}>
-      <SkillsCard title={value.title} skimage={value.image} />
-    </div>
-  );
-});
-
-const otherlist = other.map((value) => {
-  return (
-    <div key={value.title}>
-      <SkillsCard title={value.title} skimage={value.image} />
-    </div>
-  );
-});
+import { useStore } from "../../context/AppContext";
 
 const Skills = () => {
+  const { globalData } = useStore();
+  const frontendlist = globalData?.frontend?.map((value) => {
+    return (
+      <div key={value.title}>
+        <SkillsCard title={value.title} skimage={value.image} />
+      </div>
+    );
+  });
+
+  const backendlist = globalData?.backend?.map((value) => {
+    return (
+      <div key={value.title}>
+        <SkillsCard title={value.title} skimage={value.image} />
+      </div>
+    );
+  });
+
+  const dblist = globalData?.db?.map((value) => {
+    return (
+      <div key={value.title}>
+        <SkillsCard title={value.title} skimage={value.image} />
+      </div>
+    );
+  });
+
+  const otherlist = globalData?.other?.map((value) => {
+    return (
+      <div key={value.title}>
+        <SkillsCard title={value.title} skimage={value.image} />
+      </div>
+    );
+  });
+
   return (
     <div id="skills" className="w-full px-4 pt-16 lg:h-screen">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">

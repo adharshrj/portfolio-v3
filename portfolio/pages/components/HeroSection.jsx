@@ -11,7 +11,6 @@ function HeroSection() {
     <>
       <section>
         <div className="bg-main bg-no-repeat bg-cover bg-fixed h-screen bg-top lg:bg-center">
-          
           <div
             id="home"
             className="w-full px-8 pt-32 h-screen text-center backdrop-brightness-[.33]"
@@ -22,24 +21,23 @@ function HeroSection() {
                   Hi there! I'm <span className="text-[#3b95da]">Adharsh</span>
                 </h1>
                 <h1 className="py-2 md:text-5xl text-transparent text-3xl animate-pulse bg-clip-text bg-gradient-to-r from-[#43cea2] to-[#037ae3]">
-                  {"<"}Full-Stack Engineer{">"}
+                  {""}Software Engineer{""}
                 </h1>
                 <p className="py-4 text-[#dcdbdb] sm:max-w-[70%] m-auto font-semibold text-justify">
-                  I’m currently building responsive web-applications and
-                  integerating them with scalable backend systems for my
-                  clients. Recently, I've dipped my toes into Web3 related
-                  development efforts.
+                  An end to end Full Stack Software Engineer with about 3 years
+                  of experience and expertise in building scalable web
+                  applications and distributed systems.
                 </p>
-                <p className="text-[#dcdbdb] font-bold">
+                {/* <p className="text-[#dcdbdb] font-bold">
                   {" "}
                   My expertise:{" "}
                   <Typed
-                    strings={["MERN", "Next.js", "SpringBoot", "AWS"]}
+                    strings={[]}
                     typeSpeed={40}
                     backSpeed={50}
                     loop
                   />
-                </p>
+                </p> */}
 
                 {/* Social Media Section */}
 

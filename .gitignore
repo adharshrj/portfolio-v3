@@ -1,3 +1,4 @@
+.vercel
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -27,6 +28,7 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.env
 
 # vercel
 .vercel
@@ -38,3 +40,4 @@ next-env.d.ts
 # backup
 *.bk2
 yarn.lock
+*.lock

@@ -5,12 +5,21 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { NavLogo, resume, linkedin, github } from "./helpers/assets";
+import { v4 as uuidv4 } from "uuid";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
+  };
+
+  const NavMap = {
+    Home: "",
+    About: "about",
+    Skills: "skills",
+    "Recent Work": "recent",
+    Contact: "contact",
   };
 
   useEffect(() => {
@@ -26,12 +35,12 @@ const Navbar = () => {
 
   useEffect(() => {
     if (nav) {
-      document.body.style.overflow = 'hidden';
-      document.body.style.paddingRight = '15px';
+      document.body.style.overflow = "hidden";
+      document.body.style.paddingRight = "15px";
     }
     return () => {
-      document.body.style.overflow = 'unset';
-      document.body.style.paddingRight = '0px';
+      document.body.style.overflow = "unset";
+      document.body.style.paddingRight = "0px";
     };
   }, [nav]);
 
@@ -43,7 +52,13 @@ const Navbar = () => {
           : "fixed w-full h-20 z-[100]"
       }
     >
-      <div className={shadow ? "bg-black opacity-80 flex ease-in-out duration-500 justify-between items-center w-full h-full pr-4 2xl:px-16" : "flex md:justify-center justify-between ease-in-out duration-700 items-center w-full h-full pr-4 2xl:px-16"}>
+      <div
+        className={
+          shadow
+            ? "bg-black opacity-80 flex ease-in-out duration-500 justify-between items-center w-full h-full pr-4 2xl:px-16"
+            : "flex md:justify-center justify-between ease-in-out duration-700 items-center w-full h-full pr-4 2xl:px-16"
+        }
+      >
         <Link href="/">
           <Image
             src={NavLogo}
@@ -55,30 +70,28 @@ const Navbar = () => {
         </Link>
         <div>
           <ul className="hidden md:flex">
-            <li className="font-extrabold text-white ml-10 uppercase hover:border-b-[4px]">
-              <Link href="/">Home</Link>
-            </li>
-            <li className="font-extrabold text-white ml-10 uppercase hover:border-b-[4px]">
-              <Link href="/#about">About</Link>
-            </li>
-            <li className="font-extrabold text-white ml-10 uppercase hover:border-b-[4px]">
-              <Link href="/#skills">Skills</Link>
-            </li>
-            <li className="font-extrabold text-white ml-10 uppercase hover:border-b-[4px]">
-              <Link href="/#recent">Recent Work</Link>
-            </li>
+            {Object.entries(NavMap).map((value) => (
+              <li
+                key={uuidv4()}
+                className="font-extrabold text-white ml-10 uppercase hover:border-b-[4px]"
+              >
+                <Link key={uuidv4()} href={`/#${value[1]}`}>
+                  {value[0]}
+                </Link>
+              </li>
+            ))}
             <li className="font-extrabold text-white ml-10 uppercase hover:border-b-[4px]">
               <a target="_blank" href={resume} rel="noopener noreferrer">
                 Resume
               </a>
             </li>
-            <li className="font-extrabold text-white ml-10 uppercase hover:border-b-[4px]">
-              <Link href="/#contact">Contact</Link>
-            </li>
           </ul>
 
           <div onClick={handleNav} className="md:hidden cursor-pointer">
-            <AiOutlineMenu size={25} className="text-white hover:text-[#3b95da]" />
+            <AiOutlineMenu
+              size={25}
+              className="text-white hover:text-[#3b95da]"
+            />
           </div>
         </div>
       </div>
@@ -108,65 +121,52 @@ const Navbar = () => {
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-black p-3 cursor-pointer"
               >
-                <AiOutlineClose size={20} className="text-white hover:text-[#3b95da]"/>
+                <AiOutlineClose
+                  size={20}
+                  className="text-white hover:text-[#3b95da]"
+                />
               </div>
             </div>
             <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4 font-bold text-white">Welcome to my world!</p>
+              <p className="w-[85%] md:w-[90%] py-4 font-bold text-white">
+                Welcome to my world!
+              </p>
             </div>
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase font-extrabold text-white">
-              <Link href="/">
-                <li onClick={() => setNav(false)} className="py-4 hover:text-[#3b95da] text-sm">
-                   Home
-                </li>
-              </Link>
-              <Link href="/#about">
-                <li onClick={() => setNav(false)} className="py-4 hover:text-[#3b95da] text-sm">
-                  About
-                </li>
-              </Link>
-              <Link href="/#skills">
-                <li onClick={() => setNav(false)} className="py-4 hover:text-[#3b95da] text-sm">
-                  Skills
-                </li>
-              </Link>
-              <Link href="/#recent">
-                <li onClick={() => setNav(false)} className="py-4 hover:text-[#3b95da] text-sm">
-                  Recent Work
-                </li>
-              </Link>
+              {Object.entries(NavMap).map((value, idx) => (
+                <Link key={uuidv4()} href={`/#${value[1]}`}>
+                  <li
+                    key={uuidv4()}
+                    onClick={() => setNav(false)}
+                    className="py-4 hover:text-[#3b95da] text-sm"
+                  >
+                    {value[0]}
+                  </li>
+                </Link>
+              ))}
+
               <a target="_blank" href={resume} rel="noopener  noreferrer">
-                <li onClick={() => setNav(false)} className="py-4 text-sm hover:text-[#3b95da]">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm hover:text-[#3b95da]"
+                >
                   Resume
                 </li>
               </a>
-              <Link href="/#contact">
-                <li onClick={() => setNav(false)} className="py-4 text-sm hover:text-[#3b95da]">
-                  Contact
-                </li>
-              </Link>
             </ul>
             <div className="pt-40">
               <p className="uppercase tracking-widest font-bold text-[#3b95da]">
                 Connect with me
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <a
-                  href={linkedin}
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href={linkedin} target="_blank" rel="noreferrer">
                   <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaLinkedinIn color="white"/>
+                    <FaLinkedinIn color="white" />
                   </div>
                 </a>
-                <a
-                  href={github}
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href={github} target="_blank" rel="noreferrer">
                   <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaGithub color="white" />
                   </div>
@@ -176,7 +176,7 @@ const Navbar = () => {
                     onClick={() => setNav(!nav)}
                     className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300"
                   >
-                    <AiOutlineMail color="white"/>
+                    <AiOutlineMail color="white" />
                   </div>
                 </Link>
                 <a target="_blank" href={resume} rel="noopener noreferrer">

@@ -6,7 +6,7 @@ function Footer() {
       <a href="/" rel="noopener noreferrer">
         <span>
           <p className="text-center">
-            &copy; Copyright <strong>R J Adharsh</strong>. All Rights Reserved
+            &copy; Copyright <strong>Adharsh RJ</strong>. All Rights Reserved
           </p>
         </span>
       </a>
