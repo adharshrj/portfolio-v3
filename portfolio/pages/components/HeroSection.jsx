@@ -1,5 +1,4 @@
 import React from "react";
-import Typed from "react-typed";
 import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -28,17 +27,6 @@ function HeroSection() {
                   of experience and expertise in building scalable web
                   applications and distributed systems.
                 </p>
-                {/* <p className="text-[#dcdbdb] font-bold">
-                  {" "}
-                  My expertise:{" "}
-                  <Typed
-                    strings={[]}
-                    typeSpeed={40}
-                    backSpeed={50}
-                    loop
-                  />
-                </p> */}
-
                 {/* Social Media Section */}
 
                 <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
