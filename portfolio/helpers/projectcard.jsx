@@ -30,7 +30,7 @@ const ProjectCard = ({
             <ul>
               {stack.map((value, idx) => (
                 <li
-                  key={idx}
+                  key={{idx}}
                   className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"
                 >
                   #{value}

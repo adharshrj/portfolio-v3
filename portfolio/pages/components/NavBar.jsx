@@ -4,11 +4,13 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { NavLogo, resume, linkedin, github } from "../../helpers/assets";
+import { NavLogo, linkedin, github } from "../../helpers/assets";
 import { v4 as uuidv4 } from "uuid";
+import { useStore } from "../../context/AppContext";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const { globalData } = useStore();
 
   const handleNav = () => {
     setNav(!nav);
@@ -81,7 +83,7 @@ const Navbar = () => {
               </li>
             ))}
             <li className="font-extrabold text-white ml-10 uppercase hover:border-b-[4px]">
-              <a target="_blank" href={resume} rel="noopener noreferrer">
+              <a target="_blank" href={globalData.resume} rel="noopener noreferrer">
                 Resume
               </a>
             </li>
@@ -147,7 +149,7 @@ const Navbar = () => {
                 </Link>
               ))}
 
-              <a target="_blank" href={resume} rel="noopener  noreferrer">
+              <a target="_blank" href={globalData.resume} rel="noopener  noreferrer">
                 <li
                   onClick={() => setNav(false)}
                   className="py-4 text-sm hover:text-[#3b95da]"
@@ -179,7 +181,7 @@ const Navbar = () => {
                     <AiOutlineMail color="white" />
                   </div>
                 </Link>
-                <a target="_blank" href={resume} rel="noopener noreferrer">
+                <a target="_blank" href={globalData.resume} rel="noopener noreferrer">
                   <div
                     onClick={() => setNav(!nav)}
                     className="rounded-full shadow-lg shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300"

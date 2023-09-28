@@ -20,13 +20,18 @@ export default async function handler(req, res) {
         await getDoc(docRef).then(async (snap) => {
           if (snap.exists()) {
             let skillStore = snap.data();
-            const skillIdx = skillStore[type].findIndex(
-              (skill) => skill.title === data.title
-            );
-            if (skillIdx !== -1) {
-              skillStore[type][skillIdx] = data;
+
+            if (Array.isArray(skillStore[type])) {
+              const skillIdx = skillStore[type].findIndex(
+                (skill) => skill.title === data.title
+              );
+              if (skillIdx !== -1) {
+                skillStore[type][skillIdx] = data;
+              } else {
+                skillStore[type].push(data);
+              }
             } else {
-              skillStore[type].push(data);
+              skillStore[type] = data;
             }
 
             skillStore = JSON.parse(JSON.stringify(skillStore));
