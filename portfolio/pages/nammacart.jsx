@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { nammacartimg } from "./components/helpers/assets";
+import { nammacartimg } from "../helpers/assets";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import Typed from "react-typed";

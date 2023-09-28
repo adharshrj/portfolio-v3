@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { reactform } from "./components/helpers/assets";
+import { reactform } from "../helpers/assets";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import Typed from "react-typed";

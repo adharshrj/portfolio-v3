@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { somnaimg } from "./components/helpers/assets";
+import { somnaimg } from "../helpers/assets";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import Typed from "react-typed";

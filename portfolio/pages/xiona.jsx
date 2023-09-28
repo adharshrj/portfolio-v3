@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { xionaimg } from "./components/helpers/assets";
+import { xionaimg } from "../helpers/assets";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import Typed from "react-typed";
@@ -36,23 +36,24 @@ function xiona() {
           <h2>Overview</h2>
           <p>
             ABSTRACT: A robotic device with multiple stage access control and
-            methods of screening. 
-            <br/><br/>
-            ROLE: I was approached by SIMS Hospital at the
-            time of the Covid-19 pandemic to work as the lead programmer. Met
-            and discussed about the possible modes of transmission of COVID 19
-            with the veteran professionals from the medical industry. Using the
-            Pareto principle we determined the major factors that contribute to
-            the spread of COVID-19 virus. Based on previous discussions and
-            Pareto analysis the initial block diagram was created. The block
-            diagram included the sensory instruments for detection and
-            micro-computers to process the data. The proposal was submitted to
-            the expert panel and was approved. Under my leadership a team of
-            programmers was formed. The team was responsible for designing a
-            mask detection model and a chat-bot based on the aforementioned
-            questionnaire, the coding was done on micro-computers using python
-            programming language. Using a tensorflow model and open-cv for
-            viewfinder generation the code was compiled.
+            methods of screening.
+            <br />
+            <br />
+            ROLE: I was approached by SIMS Hospital at the time of the Covid-19
+            pandemic to work as the lead programmer. Met and discussed about the
+            possible modes of transmission of COVID 19 with the veteran
+            professionals from the medical industry. Using the Pareto principle
+            we determined the major factors that contribute to the spread of
+            COVID-19 virus. Based on previous discussions and Pareto analysis
+            the initial block diagram was created. The block diagram included
+            the sensory instruments for detection and micro-computers to process
+            the data. The proposal was submitted to the expert panel and was
+            approved. Under my leadership a team of programmers was formed. The
+            team was responsible for designing a mask detection model and a
+            chat-bot based on the aforementioned questionnaire, the coding was
+            done on micro-computers using python programming language. Using a
+            tensorflow model and open-cv for viewfinder generation the code was
+            compiled.
           </p>
           <a
             href="https://github.com/adharshrj"

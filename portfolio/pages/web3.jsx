@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { web3eth } from "./components/helpers/assets";
+import { web3eth } from "../helpers/assets";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import Typed from "react-typed";
