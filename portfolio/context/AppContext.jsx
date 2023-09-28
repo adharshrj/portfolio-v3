@@ -2,6 +2,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { onSnapshot, doc } from "firebase/firestore";
 import { firestore } from "../config/fbConfig";
+import MainLoader from "../helpers/MainLoader";
 
 const GlobalContext = createContext({
   globalData: null,
@@ -39,6 +40,7 @@ const GlobalProvider = ({ children }) => {
 
   return (
     <GlobalContext.Provider value={{ globalData }}>
+      {!loaded && <MainLoader />}
       {loaded && children}
     </GlobalContext.Provider>
   );

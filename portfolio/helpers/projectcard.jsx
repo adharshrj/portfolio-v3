@@ -13,7 +13,10 @@ const ProjectCard = ({
       <Link href={url}>
         <div className="group-hover:opacity-10 sm:w-full md:w-full overflow-hidden">
           <Image
-            className="rounded-t-xl z-10"
+            className="rounded-t-xl"
+            style={{
+              borderRadius: "1rem 1rem 0rem 0rem",
+            }}
             src={backgroundImg}
             alt="/"
             width="700"

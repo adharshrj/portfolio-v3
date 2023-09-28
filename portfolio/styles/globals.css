@@ -23,6 +23,20 @@ html {
   display: flex;
 }
 
+#mainLoader {
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  background-color: black;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 /* For Webkit-based browsers (Chrome, Safari and Opera) */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
@@ -30,8 +44,8 @@ html {
 
 /* For IE, Edge and Firefox */
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 @layer base {
