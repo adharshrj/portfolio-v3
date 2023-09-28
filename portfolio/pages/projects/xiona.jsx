@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import { reactform } from "../helpers/assets";
+import { xionaimg } from "../../helpers/assets";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import Typed from "react-typed";
-function deploymentportal() {
+function xiona() {
   return (
     <div className="w-full bg-[#1F2833]">
       <div className="w-screen h-[50vh] relative">
@@ -14,17 +14,19 @@ function deploymentportal() {
           layout="fill"
           objectFit="cover"
           priority={true}
-          src={reactform}
+          src={xionaimg}
           alt="/"
         />
         <div className=" absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Custom Form</h2>
-          <Typed
-                strings={["React, HTML, Css"]}
-                typeSpeed={40}
-                backSpeed={50}
-                loop
+          <h2 className="py-2">Xiona - Medical Assistant Robot</h2>
+          <h3>
+            <Typed
+              strings={["Python", "Tensorflow", "Aurdino"]}
+              typeSpeed={40}
+              backSpeed={50}
+              loop
             />
+          </h3>
         </div>
       </div>
 
@@ -33,12 +35,25 @@ function deploymentportal() {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            Created a reusable custom form component with field-wise validation
-            in React.js. A demo app has been deployed to netlify.
-            <br/><br/>
-            The main features are: <br/>
-            a) Reusability <br/>
-            b) Fieldwise validation <br/> 
+            ABSTRACT: A robotic device with multiple stage access control and
+            methods of screening.
+            <br />
+            <br />
+            ROLE: I was approached by SIMS Hospital at the time of the Covid-19
+            pandemic to work as the lead programmer. Met and discussed about the
+            possible modes of transmission of COVID 19 with the veteran
+            professionals from the medical industry. Using the Pareto principle
+            we determined the major factors that contribute to the spread of
+            COVID-19 virus. Based on previous discussions and Pareto analysis
+            the initial block diagram was created. The block diagram included
+            the sensory instruments for detection and micro-computers to process
+            the data. The proposal was submitted to the expert panel and was
+            approved. Under my leadership a team of programmers was formed. The
+            team was responsible for designing a mask detection model and a
+            chat-bot based on the aforementioned questionnaire, the coding was
+            done on micro-computers using python programming language. Using a
+            tensorflow model and open-cv for viewfinder generation the code was
+            compiled.
           </p>
           <a
             href="https://github.com/adharshrj"
@@ -48,7 +63,7 @@ function deploymentportal() {
             <button className="px-8 py-2 mt-4 mr-8 shadow-black">Code</button>
           </a>
           <a
-            href="https://adharsh-custom-form.netlify.app/"
+            href="https://www.youtube.com/watch?v=uKxohwGp-MM"
             target="_blank"
             rel="noreferrer"
           >
@@ -60,13 +75,13 @@ function deploymentportal() {
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-200 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> React.js
+                <RiRadioButtonFill className="pr-1" /> Python
               </p>
               <p className="text-gray-200 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> HTML
+                <RiRadioButtonFill className="pr-1" /> Tensorflow
               </p>
               <p className="text-gray-200 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Css
+                <RiRadioButtonFill className="pr-1" /> Aurdino
               </p>
             </div>
           </div>
@@ -79,4 +94,4 @@ function deploymentportal() {
   );
 }
 
-export default deploymentportal;
+export default xiona;

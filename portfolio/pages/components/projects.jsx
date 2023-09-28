@@ -1,23 +1,24 @@
 import React from "react";
 import ProjectCard from "../../helpers/projectcard";
 import { useStore } from "../../context/AppContext";
-import { v4 as uuidv4 } from "uuid";
-
-const Projects = () => {
-  const { globalData } = useStore();
-  const projectlist = globalData?.projectstore?.map((value) => {
+const getProjects = (store) => {
+  return store.map((value) => {
     return (
-      <div key={uuidv4()}>
+      <div key={value.title}>
         <ProjectCard
           title={value.title}
           backgroundImg={value.backgroundImage}
-          url={value.url}
+          url={'/projects'+value.url}
           stack={value.stack}
           about={value.about}
         />
       </div>
     );
   });
+};
+const Projects = () => {
+  const { globalData } = useStore();
+  const projectlist = getProjects(globalData.projectstore)
 
   return (
     <div id="recent" className="w-full px-4 pt-8 sm:pt-8 md:pt-16">

@@ -2,39 +2,28 @@ import React from "react";
 import SkillsCard from "../../helpers/skillscard";
 import { useStore } from "../../context/AppContext";
 
+const getSkills = (store) => {
+  return store.map((value) => {
+    return (
+      <div key={value.title}>
+        <SkillsCard title={value.title} skimage={value.image} />
+      </div>
+    );
+  });
+};
 const Skills = () => {
   const { globalData } = useStore();
-  const frontendlist = globalData?.frontend?.map((value) => {
-    return (
-      <div key={value.title}>
-        <SkillsCard title={value.title} skimage={value.image} />
-      </div>
-    );
-  });
+  const frontendlist = getSkills(globalData?.frontend);
+  const backendlist = getSkills(globalData?.backend);
+  const dblist = getSkills(globalData?.db);
+  const otherlist = getSkills(globalData?.other);
 
-  const backendlist = globalData?.backend?.map((value) => {
-    return (
-      <div key={value.title}>
-        <SkillsCard title={value.title} skimage={value.image} />
-      </div>
-    );
-  });
-
-  const dblist = globalData?.db?.map((value) => {
-    return (
-      <div key={value.title}>
-        <SkillsCard title={value.title} skimage={value.image} />
-      </div>
-    );
-  });
-
-  const otherlist = globalData?.other?.map((value) => {
-    return (
-      <div key={value.title}>
-        <SkillsCard title={value.title} skimage={value.image} />
-      </div>
-    );
-  });
+  const skillmap = {
+    FrontEnd: frontendlist,
+    BackEnd: backendlist,
+    Database: dblist,
+    Platform: otherlist,
+  };
 
   return (
     <div id="skills" className="w-full px-4 pt-16 lg:h-screen">
@@ -44,34 +33,16 @@ const Skills = () => {
         </p>
         <h2 className="py-4 text-[#dcdbdb]">My Forte</h2>
         {/* Skill Categorization*/}
-        <p className="font-extrabold text-xl tracking-widest uppercase text-[#3b95da] py-8">
-          {" "}
-          Frontend
-        </p>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-[#dcdbdb]">
-          {frontendlist}
-        </div>
-        <p className="font-extrabold text-xl tracking-widest uppercase text-[#3b95da] py-8">
-          {" "}
-          Backend
-        </p>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-[#dcdbdb]">
-          {backendlist}
-        </div>
-        <p className="font-extrabold text-xl tracking-widest uppercase text-[#3b95da] py-8">
-          {" "}
-          Database
-        </p>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-[#dcdbdb]">
-          {dblist}
-        </div>
-        <p className="font-extrabold text-xl tracking-widest uppercase text-[#3b95da] py-8">
-          {" "}
-          Platform
-        </p>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-[#dcdbdb]">
-          {otherlist}
-        </div>
+        {Object.entries(skillmap).map((value) => (
+          <>
+            <p className="font-extrabold text-xl tracking-widest uppercase text-[#3b95da] py-8 mt-4">
+              {value[0]}
+            </p>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-[#dcdbdb]">
+              {value[1]}
+            </div>
+          </>
+        ))}
       </div>
     </div>
   );

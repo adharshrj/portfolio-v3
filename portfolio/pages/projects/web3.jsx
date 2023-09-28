@@ -1,11 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import { nammacartimg } from "../helpers/assets";
+import { web3eth } from "../../helpers/assets";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import Typed from "react-typed";
-
-function nammacart() {
+function web3() {
   return (
     <div className="w-full bg-[#1F2833]">
       <div className="w-screen h-[50vh] relative">
@@ -15,19 +14,25 @@ function nammacart() {
           layout="fill"
           objectFit="cover"
           priority={true}
-          src={nammacartimg}
+          src={web3eth}
           alt="/"
         />
         <div className=" absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Nammcart</h2>
+          <h2 className="py-2">Web3 NFT Dashboard</h2>
           <h3>
-          <Typed
-                strings={["Next.js", "Hapi.js", "Elastic Search", "MongoDB", "AWS"]}
-                typeSpeed={40}
-                backSpeed={50}
-                loop
+            <Typed
+              strings={[
+                "Next.js",
+                "Node.js",
+                "Alchemy SDK",
+                "Ethers.js",
+                "Supabase",
+              ]}
+              typeSpeed={40}
+              backSpeed={50}
+              loop
             />
-            </h3>
+          </h3>
         </div>
       </div>
 
@@ -36,20 +41,17 @@ function nammacart() {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            Nammacart is a website where retailers can list and sell their products
-            seamlessly and efficiently. Imagine a smaller scale Amazon only concentrating on 
-            household products. <br />
-            <br />
-
-            My contributions: <br />
-            a) Collaborated with an Agile team of 4. <br />
-            b) Redesigned the existing backend services to work in line with
-            Elastic Search and developed new database models for efficient
-            implementation. <br />
-            C) Implemented Elasticsearch throughout the site
-            decreasing search response times by 80% on average (from 1000ms to
-            200ms) and ~98% (1000ms to 20ms) in an ideal case. <br />
+            Created a simple and custom NFT dashboard using Next.js, Alchemy SDK
+            and Ethers.js with Supabase and Edge fuctions serving as backend.
           </p>
+          <ul>
+            The main features are: <br />
+            a) Login with your Wallet (ex: Metamask) <br />
+            b) View all NFTs based on your ENS names <br />
+            c) Wallet Id and ENS names added to Supabase for future use.
+            <br />
+          </ul>
+
           <a
             href="https://github.com/adharshrj"
             target="_blank"
@@ -57,7 +59,11 @@ function nammacart() {
           >
             <button className="px-8 py-2 mt-4 mr-8 shadow-black">Code</button>
           </a>
-          <a href="https://www.nammacart.com/" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/adharshrj"
+            target="_blank"
+            rel="noreferrer"
+          >
             <button className="px-8 py-2 mt-4 shadow-black">Demo</button>
           </a>
         </div>
@@ -69,19 +75,19 @@ function nammacart() {
                 <RiRadioButtonFill className="pr-1" /> Next.js
               </p>
               <p className="text-gray-200 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Hapi.js
+                <RiRadioButtonFill className="pr-1" /> Node.js
               </p>
               <p className="text-gray-200 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Javascript
               </p>
               <p className="text-gray-200 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Elasticsearch
+                <RiRadioButtonFill className="pr-1" /> Ethers.js
               </p>
               <p className="text-gray-200 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> MongoDB
+                <RiRadioButtonFill className="pr-1" /> Alchemy SDK
               </p>
               <p className="text-gray-200 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> AWS Lambda
+                <RiRadioButtonFill className="pr-1" /> Supabase
               </p>
             </div>
           </div>
@@ -94,4 +100,4 @@ function nammacart() {
   );
 }
 
-export default nammacart;
+export default web3;

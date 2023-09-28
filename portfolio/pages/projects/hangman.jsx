@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/legacy/image";
-import { hangman } from "./components/helpers/assets";
+import { hangman } from "../../helpers/assets";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import Typed from "react-typed";
@@ -21,12 +21,13 @@ function hangmanGame() {
         <div className=" absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className="py-2">Hangman</h2>
           <h3>
-          <Typed
-                strings={["React.js", "Node.js", "Vite", "Vercel"]}
-                typeSpeed={40}
-                backSpeed={50}
-                loop
-            /></h3>
+            <Typed
+              strings={["React.js", "Node.js", "Vite", "Vercel"]}
+              typeSpeed={40}
+              backSpeed={50}
+              loop
+            />
+          </h3>
         </div>
       </div>
 
@@ -36,11 +37,14 @@ function hangmanGame() {
           <h2>Overview</h2>
           <p>
             An iteration of the OG hangman game we played in our childhood.
-            <br/><br/>
-            The main features are: <br/>
-            a) Vite.js tooling leading to faster compilation <br/>
-            b) Fully playable game<br/> 
-            c) Clean UI with TailwindCss<br/>
+            <br />
+            <br />
+            The main features are: <br />
+            a) Vite.js tooling leading to faster compilation <br />
+            b) Fully playable game
+            <br />
+            c) Clean UI with TailwindCss
+            <br />
           </p>
           <a
             href="https://github.com/adharshrj/hangman-ts"

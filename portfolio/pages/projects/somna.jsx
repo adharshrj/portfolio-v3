@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { somnaimg } from "../helpers/assets";
+import { somnaimg } from "../../helpers/assets";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import Typed from "react-typed";
@@ -19,12 +19,14 @@ function somna() {
         />
         <div className=" absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className="py-2">Somna - Sleep and Activity Monitor</h2>
-          <h3><Typed
-                strings={["Python, HTML, CSS, IBM Cloud"]}
-                typeSpeed={40}
-                backSpeed={50}
-                loop
-            /></h3>
+          <h3>
+            <Typed
+              strings={["Python, HTML, CSS, IBM Cloud"]}
+              typeSpeed={40}
+              backSpeed={50}
+              loop
+            />
+          </h3>
         </div>
       </div>
 
@@ -34,14 +36,15 @@ function somna() {
           <h2>Overview</h2>
           <p>
             The goal was to develop an application that will assist astronauts
-            in maitaining a proper dietary intake and also help them maintain peak 
-            performance in zero gravity situations. We analyzed the dataset provided
-            by NASA to derive the essential parameters. The essential parameters
-            were Basal Metabolic Rate or BMR of the individual in zero gravity
-            situations and nutrient partioning advised by NASA. Based on the
-            research we designed a preliminary web application, the application
-            was deployed to IBM Cloud. An android port was then created. 
-            We cross checked the parameters and submitted after finalization.
+            in maitaining a proper dietary intake and also help them maintain
+            peak performance in zero gravity situations. We analyzed the dataset
+            provided by NASA to derive the essential parameters. The essential
+            parameters were Basal Metabolic Rate or BMR of the individual in
+            zero gravity situations and nutrient partioning advised by NASA.
+            Based on the research we designed a preliminary web application, the
+            application was deployed to IBM Cloud. An android port was then
+            created. We cross checked the parameters and submitted after
+            finalization.
           </p>
           <a
             href="https://2020.spaceappschallenge.org/challenges/sustain/sleep-shift-scheduling-tool/teams/peripheralplutarch/project"
